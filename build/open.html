@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/main.js">
 </head>
 <body class="min-h-screen">
   <header class="bg-teal-700 text-white sticky t-0 z-10">
@@ -17,15 +18,58 @@
            <a href=""><img class=" absolute w-1/6" src="images/The_Jorney-removebg-preview.png" alt="The Journey Text"></a>
          <div class="text-center flex-auto ">
       </div>
+      <section>
+      <div class="hidden">
+        <button
+          id="hamburger-button"
+          class="text-3xl md:hidden cursor-pointer"
+        >
+          &#9776;
+        </button>
+        <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+          <a href="#rockets" class="hover:opacity-90">Rockets</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+      </div>
+    </section>
+    <section
+      id="mobile-menu"
+      class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden"
+    >
+      <button class="text-8xl self-end px-6">&times;</button>
+      <nav
+        class="flex flex-col min-h-screen items-center py-8"
+        aria-label="Mobile"
+      >
+        <a href="#hero" class="w-full text-center py-6 hover:opacity-90"
+          >Home</a
+        >
+        <a href="#rockets" class="w-full text-center py-6 hover:opacity-90"
+          >Our Rockets</a
+        >
+        <a
+          href="#testmonials"
+          class="w-full text-center py-6 hover:opacity-90"
+          >Testimonials</a
+        >
+        <a href="#contact" class="w-full text-center py-6 hover:opacity-90"
+          >Contact</a
+        >
+        <a href="#footer" class="w-full text-center py-6 hover:opacity-90"
+          >Legal</a
+        >
+      </nav>
+    </section>
     </nav>
-      <div class="mrows sm:w-10">
-      <div class=" myrows">
+      <div class="mrows">
+      <div class="myrows">
        <a href="#About Me"><img title="Go to About Me" src="images/travel2.png" alt="Travel image"></a> 
       </div>
-      <div class="myrows2"> 
+      <div class=" myrows2"> 
         <a href="#My Works"><img title="Go and see my work" src="images/travel3.png" alt="Travel image"></a> 
       </div>
-      <div class="myrows1">
+      <div class=" myrows1">
         <a href="contact.html"><img title="Go to Contact Me" src="images/travel1.png" alt="Travel image"></a> 
       </div>
       </div>
